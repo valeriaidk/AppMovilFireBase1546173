@@ -1,19 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondoazul">
+
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="159dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icnoco"
+        />
+
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#406DE1"
+        android:textSize="40sp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:shadowColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#406DE1"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+        <EditText
+            android:id="@+id/txtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@senati.pe"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#406DE1"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <EditText
+            android:id="@+id/txtPassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ingrese contraseña"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="40dp"
+            android:inputType="numberPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forget your password"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:textColor="#406DE1"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="LOGIN"
+            android:backgroundTint="#4664E0"
+            android:layout_gravity="end"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/lblRegistrate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Don't have acount... Create"
+        android:layout_gravity="end"
+        android:layout_marginEnd="60dp"
+        android:textColor="#406DE1"
+        android:textSize="12sp"
+        android:clickable="true"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>
