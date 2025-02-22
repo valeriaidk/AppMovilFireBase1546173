@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inicio"
+    android:orientation="vertical"
+    android:background="@drawable/senati_ingtecinfcom_1800x1190">
+
+    <Button
+        android:id="@+id/btnLoginInicio"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="INGRESAR"
+        android:backgroundTint="#F0F5F1"
+        android:layout_gravity="end"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="650dp"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>
