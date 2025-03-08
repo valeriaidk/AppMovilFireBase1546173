@@ -7,19 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".menu"
     android:orientation="vertical"
-    android:background="#1C3F6A">
+    android:background="@drawable/fondoazul">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:textColor="@color/white"
         android:layout_gravity="end"
-        android:layout_marginEnd="40dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="serif"
-        android:textSize="30sp"
-        />
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -33,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cuenta"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_gravity="end"
             android:layout_marginEnd="40dp"
             android:layout_marginTop="10dp"
@@ -69,12 +68,14 @@
             android:elevation="10dp">
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_margin="10dp">
 
                 <ImageView
+                    android:id="@+id/imgclientes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/clientes"/>
@@ -240,6 +241,7 @@
     </GridLayout>
 
     <Button
+        android:id="@+id/btnCerrarMenu"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_gravity="center"

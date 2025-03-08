@@ -11,27 +11,27 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class inicio extends AppCompatActivity {
+public class Cclientes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.activity_cclientes);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button btnRegistrarCliente = findViewById(R.id.btnRegistrarCliente);
 
-        Button btnLoginInicio = findViewById(R.id.btnLoginInicio);
-
-        btnLoginInicio.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent conec = new Intent(inicio.this,MainActivity.class);
-                startActivity(conec);
+                Intent conectar3 = new Intent(Cclientes.this,Cregistrar.class);
+                startActivity(conectar3);
             }
         });
+
     }
 }

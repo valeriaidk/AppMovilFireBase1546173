@@ -13,7 +13,16 @@
         android:theme="@style/Theme.AppMovil1546173"
         tools:targetApi="31">
         <activity
+            android:name=".Registre"
+            android:exported="false" />
+        <activity
             android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".Cclientes"
+            android:exported="false" />
+        <activity
+            android:name=".Cregistrar"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -22,7 +31,7 @@
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".inicio"
+            android:name=".inicio1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

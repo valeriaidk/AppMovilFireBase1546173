@@ -45,7 +45,10 @@
         android:layout_marginTop="0.5dp"
         android:layout_marginEnd="40dp"
         android:hint="Ingrese Apellidos y Nombres"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:alpha="0.5"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +56,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Correo Electronico:"
-        android:textColor="#406DE1" />
+        android:textColor="#406DE1"
+        />
 
     <EditText
         android:id="@+id/txtCorreoElectronico"
@@ -63,7 +67,10 @@
         android:layout_marginTop="0.5dp"
         android:layout_marginEnd="40dp"
         android:hint="Ingrese Correo Electronico"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:alpha="0.5"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +89,10 @@
         android:layout_marginEnd="40dp"
         android:hint="Ingrese su telefono"
         android:inputType="number"
-        android:maxLength="9" />
+        android:maxLength="9"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:alpha="0.5"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,7 +110,10 @@
         android:layout_marginTop="0.5dp"
         android:layout_marginEnd="40dp"
         android:hint="Ingrese Contraseña"
-        android:inputType="numberPassword" />
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:alpha="0.5"/>
 
 
 

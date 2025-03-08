@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         lblregistrate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent conectar = new Intent(MainActivity.this,Register.class);
-                startActivity(conectar);
+                Intent conectar4 = new Intent(MainActivity.this,Registre.class);
+                startActivity(conectar4);
             }
         });
         btnLogin.setOnClickListener(new View.OnClickListener() {

@@ -6,7 +6,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,21 +24,18 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Register extends AppCompatActivity {
+public class Registre extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_registre);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
-
         });
-
         Button btnCancelarRegister = findViewById(R.id.btnCancelarRegister);
         Button btnRegistrar = findViewById(R.id.btnRegistrar);
         Button btnlimpiar = findViewById(R.id.btnLimpiar);
@@ -52,7 +48,7 @@ public class Register extends AppCompatActivity {
         btnCancelarRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent conec = new Intent(Register.this,MainActivity.class);
+                Intent conec = new Intent(Registre.this,MainActivity.class);
                 startActivity(conec);
             }
         });
@@ -66,7 +62,7 @@ public class Register extends AppCompatActivity {
                 String passuusuario = txtContraseña.getText().toString();
 
                 if (TextUtils.isEmpty(nombreusuario)||TextUtils.isEmpty(telefonousuario)||TextUtils.isEmpty(emailuser)||TextUtils.isEmpty(passuusuario)){
-                    Toast.makeText(Register.this,"Todos los campos son obligatorios",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Registre.this,"Todos los campos son obligatorios",Toast.LENGTH_SHORT).show();
                 }else{
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailuser,passuusuario).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -79,15 +75,17 @@ public class Register extends AppCompatActivity {
                                 user.put("email", emailuser);
 
                                 FirebaseDatabase.getInstance().getReference().child("usuarios").child(UserId).setValue(user);
-                                Toast.makeText(Register.this,"Registro Exitoso", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Registre.this,"Registro Exitoso", Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                Toast.makeText(Register.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Registre.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                             }
                         }
-                    });
+                    }) ;
+
                 }
             }
         });
+
     }
 }

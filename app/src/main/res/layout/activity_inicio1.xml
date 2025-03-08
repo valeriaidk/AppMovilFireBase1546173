@@ -5,20 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inicio"
+    tools:context=".inicio1"
     android:orientation="vertical"
     android:background="@drawable/senati_ingtecinfcom_1800x1190">
-
     <Button
-        android:id="@+id/btnLoginInicio"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="INGRESAR"
-        android:backgroundTint="#F0F5F1"
-        android:layout_gravity="end"
-        android:layout_marginEnd="130dp"
-        android:layout_marginTop="650dp"
-        android:textColor="@color/black"/>
-
+    android:id="@+id/btnLoginInicio"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="INGRESAR"
+    android:backgroundTint="#F0F5F1"
+    android:layout_gravity="end"
+    android:layout_marginEnd="130dp"
+    android:layout_marginTop="650dp"
+    android:textColor="@color/black"/>
 
 </LinearLayout>
