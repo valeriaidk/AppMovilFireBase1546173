@@ -2,6 +2,7 @@ package com.example.appmovil1546173;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -39,10 +40,13 @@ public class menu extends AppCompatActivity {
         imageclientes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("DEBUG", "Se hizo clic en imgclientes"); // Mensaje de depuración
                 Intent ac1 = new Intent(menu.this, Cclientes.class);
                 startActivity(ac1);
             }
         });
+
+
 
 
     }

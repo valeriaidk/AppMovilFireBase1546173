@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                             if (task.isSuccessful()){
                                 Intent con = new Intent(MainActivity.this,menu.class);
                                 startActivity(con);
-                                finish();
+
                             }else {
                                 Toast.makeText(MainActivity.this,"Credenciales incorrectas",Toast.LENGTH_SHORT).show();
                             }

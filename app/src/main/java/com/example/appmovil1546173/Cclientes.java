@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Cclientes extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,7 @@ public class Cclientes extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button btnRegistrarCliente = findViewById(R.id.btnRegistrarCliente);
+        FloatingActionButton btnRegistrarCliente = findViewById(R.id.btnRegistrarCliente);
 
         btnRegistrarCliente.setOnClickListener(new View.OnClickListener() {
             @Override

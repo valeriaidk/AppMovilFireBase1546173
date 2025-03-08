@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ClientesAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolderClientes> {
+public class ClientesAdapter extends RecyclerView.Adapter<ClientesAdapter.ViewHolderClientes> {
     @NonNull
     @Override
     public ClientesAdapter.ViewHolderClientes onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
